@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fuse_quote/screens/home.dart';
 import 'package:fuse_quote/screens/edit.dart';
-import 'services.dart';
+import 'service.dart';
 
 void main() {
   runApp(
