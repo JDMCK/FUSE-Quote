@@ -1,23 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:fuse_quote/screens/home.dart';
+import 'package:fuse_quote/screens/edit.dart';
+import 'services.dart';
 
 void main() {
-  runApp(MaterialApp(home: Home()));
-}
-
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Fuse Quote'),
-        centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 65, 131, 212),
-      ),
-      body: Center(
-        child: Image.asset('assets/images/FUSE_logo.png'),
-      ),
-    );
-  }
+  runApp(
+    MaterialApp(
+        title: 'FUSE Quote',
+        theme: ThemeData(primaryColor: Color.fromARGB(255, 58, 154, 214)),
+        routes: {'/': (context) => Home(), '/edit': (context) => Edit()}),
+  );
 }
