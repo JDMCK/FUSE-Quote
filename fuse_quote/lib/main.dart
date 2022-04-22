@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Fuse Quote'),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 255, 0, 0),
+        backgroundColor: Color.fromARGB(255, 65, 131, 212),
       ),
       body: Center(
         child: Image.asset('assets/images/FUSE_logo.png'),
