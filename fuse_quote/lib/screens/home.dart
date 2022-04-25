@@ -16,18 +16,19 @@ class _HomeState extends State<Home> {
   List<Service> ServiceList = [];
   double totalPrice = 0;
 
-  double getTotalPrice(List<Service> services) {
+  void updateTotalPrice(List<Service> services) {
     double price = 0;
     for (var s in services) {
       price += s.price;
     }
-    return price;
+    totalPrice = price;
   }
 
   void addToList(service) {
     if (service != null) {
       setState(() {
         ServiceList.add(service);
+        updateTotalPrice(ServiceList);
       });
     }
   }
@@ -35,6 +36,7 @@ class _HomeState extends State<Home> {
   void removeFromList(service) {
     setState(() {
       ServiceList.remove(service);
+      updateTotalPrice(ServiceList);
     });
   }
 

@@ -63,7 +63,7 @@ class _EditState extends State<Edit> {
             ),
             if (dropDownValue == 'Siding') Siding(saveService: saveService),
             if (dropDownValue == 'Gutters') Gutters(saveService: saveService),
-            // if (dropDownValue == 'Windows') Window(),
+            if (dropDownValue == 'Windows') Window(saveService: saveService),
             // if (dropDownValue == 'Driveway') Driveway(),
             // if (dropDownValue == 'Roof') Roof(),
             // if (dropDownValue == 'Walkway') Walkway(),
