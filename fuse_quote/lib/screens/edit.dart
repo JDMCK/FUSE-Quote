@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fuse_quote/services/servicewidgets.dart';
+import 'package:fuse_quote/services/service.dart';
 
 class Edit extends StatefulWidget {
-  const Edit({Key? key}) : super(key: key);
-
+  Edit({Key? key}) : super(key: key);
   @override
   State<Edit> createState() => _EditState();
 }
@@ -23,6 +24,10 @@ class _EditState extends State<Edit> {
     'Fencing',
     'Custom'
   ];
+
+  void saveService(Service service) {
+    Navigator.pop(context, service);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,8 +59,20 @@ class _EditState extends State<Edit> {
                 color: Color.fromARGB(255, 58, 154, 214),
               ),
               isExpanded: true,
-              //borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(15),
             ),
+            if (dropDownValue == 'Siding') Siding(saveService: saveService),
+            if (dropDownValue == 'Gutters') Gutters(saveService: saveService),
+            // if (dropDownValue == 'Windows') Window(),
+            // if (dropDownValue == 'Driveway') Driveway(),
+            // if (dropDownValue == 'Roof') Roof(),
+            // if (dropDownValue == 'Walkway') Walkway(),
+            // if (dropDownValue == 'Patio') Patio(),
+            // if (dropDownValue == 'Deck') Deck(),
+            // if (dropDownValue == 'Soffit') Soffit(),
+            // if (dropDownValue == 'Trim') Trim(),
+            // if (dropDownValue == 'Fence') Fence(),
+            // if (dropDownValue == 'Custom') Custom(),
           ]),
         ),
       ),

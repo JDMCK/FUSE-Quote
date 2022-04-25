@@ -13,10 +13,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List<Service> ServiceList = [
-    Service(name: "window", price: 23.56),
-    Service(name: "door", price: 49.32)
-  ];
+  List<Service> ServiceList = [];
   double totalPrice = 0;
 
   double getTotalPrice(List<Service> services) {
@@ -27,8 +24,24 @@ class _HomeState extends State<Home> {
     return price;
   }
 
+  void addToList(service) {
+    if (service != null) {
+      setState(() {
+        ServiceList.add(service);
+      });
+    }
+  }
+
+  void removeFromList(service) {
+    setState(() {
+      ServiceList.remove(service);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    addToList(ModalRoute.of(context)?.settings.arguments);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 58, 154, 214),
@@ -58,15 +71,15 @@ class _HomeState extends State<Home> {
           Expanded(
               child: Container(
             child: ListView(
-                children:
-                    ServiceList.map((service) => ServiceCard(service: service))
-                        .toList()),
+                children: ServiceList.map((service) =>
+                        ServiceCard(service: service, remove: removeFromList))
+                    .toList()),
           )),
         ]),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, '/edit');
+        onPressed: () async {
+          addToList(await Navigator.pushNamed(context, '/edit'));
         },
         child: Icon(
           Icons.add_rounded,
