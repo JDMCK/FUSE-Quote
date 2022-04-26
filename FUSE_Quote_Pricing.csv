@@ -1,4 +1,3 @@
-﻿name,size,quality,story,material,price
-window,small,,1,,5
-window,large,,1,,7.5
-window,extra large,,1,,10
+name,story,size,quality,material,price
+Windows,1,Regular,,,15
+Siding,1,,Vinyl,,8
