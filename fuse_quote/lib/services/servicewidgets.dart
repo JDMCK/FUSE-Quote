@@ -247,17 +247,17 @@ class _GuttersState extends State<Gutters> {
   }
 }
 
-class Window extends StatefulWidget {
-  const Window({Key? key, required this.saveService}) : super(key: key);
+class Windows extends StatefulWidget {
+  const Windows({Key? key, required this.saveService}) : super(key: key);
   final Function saveService;
 
   @override
-  State<Window> createState() => _WindowState();
+  State<Windows> createState() => _WindowsState();
 }
 
-class _WindowState extends State<Window> {
+class _WindowsState extends State<Windows> {
   Service service = Service(
-      name: 'Window',
+      name: 'Windows',
       story: 1,
       quantity: 1,
       size: 'Regular',

@@ -1,5 +1,4 @@
-// import 'dart:developer';
-// import 'dart:ffi';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:fuse_quote/services/service.dart';
@@ -15,6 +14,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   List<Service> ServiceList = [];
   double totalPrice = 0;
+
+  Object? pricingData;
 
   void updateTotalPrice(List<Service> services) {
     double price = 0;
@@ -42,7 +43,13 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    addToList(ModalRoute.of(context)?.settings.arguments);
+    // Determines if home screen is recieving a service or file
+    Object? object = ModalRoute.of(context)?.settings.arguments;
+    if (object.runtimeType == Service) {
+      addToList(object);
+    } else {
+      pricingData = object;
+    }
 
     return Scaffold(
       appBar: AppBar(
@@ -81,7 +88,8 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          addToList(await Navigator.pushNamed(context, '/edit'));
+          addToList(await Navigator.pushNamed(context, '/edit',
+              arguments: pricingData));
         },
         child: Icon(
           Icons.add_rounded,
