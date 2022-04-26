@@ -7,6 +7,6 @@ void main() {
     MaterialApp(
         title: 'FUSE Quote',
         theme: ThemeData(primaryColor: Color.fromARGB(255, 58, 154, 214)),
-        routes: {'/': (context) => Home(), '/edit': (context) => Edit()}),
+        routes: {'/home': (context) => Home(), '/edit': (context) => Edit()}),
   );
 }
