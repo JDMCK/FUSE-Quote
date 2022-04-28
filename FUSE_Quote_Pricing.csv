@@ -1,3 +1,92 @@
-name,story,size,quality,material,price
-Windows,1,Regular,,,15
-Siding,1,,Vinyl,,8
+﻿name,story,size,quality,material,addon,price
+Siding,1,,,Vinyl,,230
+Siding,1,,,Brick,,230
+Siding,1,,,Stucco,,345
+Siding,1,,,Hardie Board,,230
+Siding,2,,,Vinyl,,280
+Siding,2,,,Brick,,280
+Siding,2,,,Stucco,,420
+Siding,2,,,Hardie Board,,280
+Siding,3,,,Vinyl,,320
+Siding,3,,,Brick,,320
+Siding,3,,,Stucco,,500
+Siding,3,,,Hardie Board,,470
+Gutters,1,,Basic,,,200
+Gutters,1,,Deluxe,,,260
+Gutters,1,,Brightening,,,105
+Gutters,2,,Basic,,,260
+Gutters,2,,Deluxe,,,290
+Gutters,2,,Brightening,,,125
+Gutters,3,,Basic,,,
+Gutters,3,,Deluxe,,,
+Gutters,3,,Brightening,,,
+Gutters,1,,Basic,,Brightening,275
+Gutters,1,,Deluxe,,Brightening,335
+Gutters,1,,Brightening,,Brightening,105
+Gutters,2,,Basic,,Brightening,355
+Gutters,2,,Deluxe,,Brightening,385
+Gutters,2,,Brightening,,Brightening,125
+Gutters,3,,Basic,,Brightening,
+Gutters,3,,Deluxe,,Brightening,
+Gutters,3,,Brightening,,Brightening,
+Windows,1,Regular,,,,5
+Windows,1,Large,,,,7.5
+Windows,1,Extra Large,,,,
+Windows,2,Regular,,,,7.5
+Windows,2,Large,,,,11.25
+Windows,2,Extra Large,,,,
+Windows,3,Regular,,,,10
+Windows,3,Large,,,,15
+Windows,3,Extra Large,,,,
+Driveway,,Regular,Basic,,,180
+Driveway,,Regular,Deluxe,,,225
+Driveway,,Large,Basic,,,220
+Driveway,,Large,Deluxe,,,260
+Driveway,,Extra Large,Basic,,,260
+Driveway,,Extra Large,Deluxe,,,299
+Driveway,,Regular,Basic,,Seal,225
+Driveway,,Regular,Deluxe,,Seal,281.25
+Driveway,,Large,Basic,,Seal,275
+Driveway,,Large,Deluxe,,Seal,325
+Driveway,,Extra Large,Basic,,Seal,325
+Driveway,,Extra Large,Deluxe,,Seal,373.75
+Roof,1,,,Asphalt,,230
+Roof,1,,,Tile,,
+Roof,1,,,Metal,,
+Roof,1,,,Cedar Shake,,400
+Roof,2,,,Asphalt,,300
+Roof,2,,,Tile,,
+Roof,2,,,Metal,,
+Roof,2,,,Cedar Shake,,650
+Roof,3,,,Asphalt,,
+Roof,3,,,Tile,,
+Roof,3,,,Metal,,
+Roof,3,,,Cedar Shake,,
+Patio,,Regular,Basic,,,100
+Patio,,Regular,Deluxe,,,170
+Patio,,Large,Basic,,,130
+Patio,,Large,Deluxe,,,200
+Patio,,Extra Large,Basic,,,150.75
+Patio,,Extra Large,Deluxe,,,236.25
+Patio,,Regular,Basic,,Seal,
+Patio,,Regular,Deluxe,,Seal,
+Patio,,Large,Basic,,Seal,
+Patio,,Large,Deluxe,,Seal,
+Patio,,Extra Large,Basic,,Seal,
+Patio,,Extra Large,Deluxe,,Seal,
+Deck,,Regular,Basic,,,120
+Deck,,Regular,Deluxe,,,190
+Deck,,Large,Basic,,,200
+Deck,,Large,Deluxe,,,280
+Deck,,Extra Large,Basic,,,
+Deck,,Extra Large,Deluxe,,,
+Soffits,1,,,,,230
+Soffits,2,,,,,280
+Soffits,3,,,,,330
+Trim,1,,Basic,,,180
+Trim,1,,Deluxe,,,200
+Trim,2,,Basic,,,230
+Trim,2,,Deluxe,,,260
+Trim,3,,Basic,,,
+Trim,3,,Deluxe,,,
+Fencing,,,,,,1.3
