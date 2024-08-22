@@ -1,5 +1,5 @@
-# FUSE_Quote
-An application to make quoting for FUSE easier and more efficient
+# FUSE Quote
+An application to make quoting for FUSE Power Washing more efficient by allowing on-site quoting and estimation.
 
 Purpose:
 To exist as an app on both Android and iOS to make quoting/estimating easier and more efficient.
